@@ -197,13 +197,13 @@ bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 20
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 20
 
 # power
-set $Locker i3lock-wrapper
+set $locker xscreensaver-command -lock
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
-  bindsym l exec --no-startup-id $Locker, mode "default"
+  bindsym l exec --no-startup-id $locker, mode "default"
   bindsym e exec --no-startup-id i3-msg exit, mode "default"
-  bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
-  bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+  bindsym s exec --no-startup-id $locker && systemctl suspend, mode "default"
+  bindsym h exec --no-startup-id $locker && systemctl hibernate, mode "default"
   bindsym r exec --no-startup-id systemctl reboot, mode "default"
   bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
@@ -216,6 +216,10 @@ bindsym $mod+Pause mode "$mode_system"
 # workspace assignments
 assign [class="Pidgin"] 8
 assign [class="Thunderbird"] 9
+assign [class="Spotify"] 10
+
+# screensaver agent
+exec --no-startup-id xscreensaver -no-splash
 
 # wallpaper
 exec_always --no-startup-id feh --bg-fill ~/Images/wallpaper.jpg
