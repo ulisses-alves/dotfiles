@@ -8,7 +8,7 @@ dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
 font = Monospace 10
-font = Droid Sans Mono 10
+font = Droid Sans Mono Bold 10
 scrollback_lines = 1000
 search_wrap = true
 #icon_name = terminal
@@ -29,35 +29,50 @@ cursor_shape = block
 # emit escape sequences for other keys modified by Control
 #modify_other_keys = false
 
-[colors]
-#cursor = #dcdccc
-foreground = #dcdccc
-foreground_bold = #ffffff
-background = #3f3f3f
 
-# 20% background transparency (requires a compositor)
-#background = rgba(63, 63, 63, 0.8)
+[colors]
+foreground = #c5c8c6
+foreground_bold = #ffffff
+#foreground_dim = #888888
+#background = #ededed
+background = #1d1f21
+#cursor = #aeafad
 
 # if unset, will reverse foreground and background
-highlight = #2f2f2f
+highlight = #d6d6d6
 
 # colors from color0 to color254 can be set
-color0 = #3f3f3f
-color1 = #705050
-color2 = #60b48a
-color3 = #dfaf8f
-color4 = #506070
-color5 = #dc8cc3
-color6 = #8cd0d3
-color7 = #dcdccc
-color8 = #709080
-color9 = #dca3a3
-color10 = #c3bf9f
-color11 = #f0dfaf
-color12 = #94bff3
-color13 = #ec93d3
-color14 = #93e0e3
-color15 = #ffffff
+# Black + Grey
+color0 = #1d1f21
+color8 = #969896
+
+# Red + Bright Red
+color1 = #912226
+color9 = #cc6666
+
+# Green + Bright Green
+color2 = #778900
+color10 = #b5bd68
+
+# Yellow (Orange) + Bright Yellow (Yellow)
+color3 = #ae7b00
+color11 = #f0c674
+
+# Blue + Bright Blue
+color4 = #1d2594
+color12 = #81a2be
+
+# Magenta (Purple) + Bright Magenta
+color5 = #682a9b
+color13 = #b294bb
+
+# Cyan (Aqua) + Bright Cyan
+color6 = #2b6651
+color14 = #8abeb7
+
+# Light Grey (Selection) + White (Current Line)
+color7 = #929593
+color15 = #ecebec
 
 [hints]
 #font = Monospace 12
