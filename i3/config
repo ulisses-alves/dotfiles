@@ -222,4 +222,4 @@ assign [class="Spotify"] 10
 exec --no-startup-id xscreensaver -no-splash
 
 # wallpaper
-exec_always --no-startup-id feh --bg-fill ~/Images/wallpaper.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/wallpaper.jpg
