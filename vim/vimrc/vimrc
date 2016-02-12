@@ -151,4 +151,5 @@ set expandtab
 "------------------------------------------------------------
 set nowrap
 set colorcolumn=81
-colorscheme github
+set background=dark
+colorscheme Tomorrow-Night-Eighties
