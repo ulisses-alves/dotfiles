@@ -158,16 +158,17 @@ bindsym $mod+r mode "resize"
 
 set $bg-color            #333333
 set $inactive-bg-color   #333333
-set $text-color          #fefefe
+set $text-color          #e8e8e8
 set $inactive-text-color #555555
-set $urgent-bg-color     #ff5e6d
+set $urgent-text-color   #e8e8e8
+set $urgent-bg-color     #e14444
 
 # window colors
 #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          #00ff00
+client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-color   #00ff00
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run -i -fn \"Droid Sans Mono-10\" -nb \"$bg-color\" -nf \"$text-color\" -sf \"$urgent-bg-color\" -sb \"$bg-color\"
@@ -180,10 +181,11 @@ bar {
   colors {
     background $bg-color
     separator $inactive-text-color
+    statusline $text-color
     #                  border             background         text
     focused_workspace  $bg-color          $bg-color          $text-color
     inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-    urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+    urgent_workspace   $urgent-bg-color   $urgent-bg-color   $urgent-text-color
   }
 }
 
