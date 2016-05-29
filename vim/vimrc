@@ -17,7 +17,8 @@ set nocompatible
 
 filetype off
 
-source $HOME/.vim/config/vundle.vim
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 source $HOME/.vim/config/ctrlp.vim
 source $HOME/.vim/config/airlines.vim
 source $HOME/.vim/config/mappings.vim
