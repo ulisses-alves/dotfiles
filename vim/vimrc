@@ -153,6 +153,7 @@ set expandtab
 "------------------------------------------------------------
 set nowrap
 set colorcolumn=81
-colorscheme Tomorrow-Night-Eighties
+colorscheme PaperColor
+let g:airline_theme='papercolor'
 
 autocmd BufNewFile,BufRead *.ts,*.tsx setlocal filetype=typescript
