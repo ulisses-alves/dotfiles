@@ -153,3 +153,5 @@ set expandtab
 set nowrap
 set colorcolumn=81
 colorscheme Tomorrow-Night-Eighties
+
+autocmd BufNewFile,BufRead *.ts,*.tsx setlocal filetype=typescript
