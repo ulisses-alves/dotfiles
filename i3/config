@@ -158,7 +158,7 @@ bindsym $mod+r mode "resize"
 
 set $bg-color            #333333
 set $inactive-bg-color   #333333
-set $text-color          #fefefe
+set $text-color          #e0e0e0
 set $inactive-text-color #555555
 set $urgent-bg-color     #ff5e6d
 
@@ -180,6 +180,7 @@ bar {
   colors {
     background $bg-color
     separator $inactive-text-color
+    statusline $text-color
     #                  border             background         text
     focused_workspace  $bg-color          $bg-color          $text-color
     inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
