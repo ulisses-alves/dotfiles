@@ -155,5 +155,6 @@ set nowrap
 set colorcolumn=81
 colorscheme PaperColor
 let g:airline_theme='papercolor'
+let g:vim_json_syntax_conceal = 0
 
 autocmd BufNewFile,BufRead *.ts,*.tsx setlocal filetype=typescript
