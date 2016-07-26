@@ -32,6 +32,9 @@ floating_modifier $mod
 # thin borders
 hide_edge_borders both
 
+# disable cursor warping when switching workspaces
+mouse_warping none
+
 # start a terminal
 bindsym $mod+Return exec --no-startup-id termite
 
