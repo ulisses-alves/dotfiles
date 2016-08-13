@@ -14,8 +14,6 @@ font = Meslo LG M for Powerline Bold 9
 font = Fantasque Sans Mono Bold 11
 scrollback_lines = 1000
 search_wrap = true
-#icon_name = terminal
-#geometry = 640x480
 
 # "system", "on" or "off"
 cursor_blink = system
@@ -23,21 +21,16 @@ cursor_blink = system
 # "block", "underline" or "ibeam"
 cursor_shape = block
 
-# $BROWSER is used by default
-#browser = firefox
-
 # set size hints for the window
 #size_hints = false
 
 # emit escape sequences for other keys modified by Control
 #modify_other_keys = false
 
-
 [colors]
 foreground = #c5c8c6
 foreground_bold = #ffffff
 #foreground_dim = #888888
-#background = #ededed
 background = #1d1f21
 #cursor = #aeafad
 
