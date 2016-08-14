@@ -157,9 +157,4 @@ colorscheme PaperColor
 let g:airline_theme='papercolor'
 let g:vim_json_syntax_conceal = 0
 
-noremap ; l
-noremap l k
-noremap k j
-noremap j h
-
 autocmd BufNewFile,BufRead *.ts,*.tsx setlocal filetype=typescript

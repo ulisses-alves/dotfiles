@@ -8,3 +8,10 @@ map Y y$
 " Map <C-L> (redraw screen) to also turn off search highlighting until the
 " next search
 nnoremap <C-L> :nohl<CR><C-L>
+
+" Map jkl; instead of hjkl
+noremap ; l
+noremap l k
+noremap k j
+noremap j h
+
