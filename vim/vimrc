@@ -22,6 +22,7 @@ execute pathogen#infect()
 source $HOME/.vim/config/ctrlp.vim
 source $HOME/.vim/config/airlines.vim
 source $HOME/.vim/config/mappings.vim
+source $HOME/.vim/config/syntastic.vim
 
 " Attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,

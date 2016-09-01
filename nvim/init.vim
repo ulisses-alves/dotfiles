@@ -8,12 +8,14 @@ Plug 'morhetz/gruvbox'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 
 source $HOME/.config/nvim/ctrlp.vim
 source $HOME/.config/nvim/airlines.vim
 source $HOME/.config/nvim/mappings.vim
+source $HOME/.config/nvim/syntastic.vim
 
 set number
 set hidden

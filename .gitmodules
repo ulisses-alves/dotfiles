@@ -58,3 +58,6 @@
 [submodule "vim/bundle/gruvbox"]
 	path = vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
