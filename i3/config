@@ -114,19 +114,20 @@ bindsym $mod+r mode "resize"
 set $bg-color            #333333
 set $inactive-bg-color   #222222
 set $text-color          #d8d8d8
+set $accent-color        #a3be8c
 set $inactive-text-color #555555
 set $urgent-text-color   #e8e8e8
-set $urgent-bg-color     #e14444
+set $urgent-bg-color     #bf616a
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $urgent-bg-color
+client.focused          $bg-color           $bg-color          $accent-color
 client.unfocused        $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.focused_inactive $inactive-bg-color  $inactive-bg-color $inactive-text-color #00ff00
 client.urgent           $urgent-bg-color    $urgent-bg-color   $urgent-text-color   #00ff00
 
 # start program launcher
-bindsym $mod+d exec --no-startup-id dmenu_run -i -fn \"Fantasque Sans Mono-10\" -nb \"$bg-color\" -nf \"$text-color\" -sf \"$urgent-bg-color\" -sb \"$bg-color\"
+bindsym $mod+d exec --no-startup-id rofi -show run
 
 bar {
   status_command i3status
@@ -136,8 +137,8 @@ bar {
     separator $inactive-text-color
     statusline $text-color
     #                  border             background         text
-    focused_workspace  $bg-color          $bg-color          $urgent-bg-color
-    active_workspace   $bg-color          $bg-color          $urgent-bg-color
+    focused_workspace  $bg-color          $bg-color          $accent-color
+    active_workspace   $bg-color          $bg-color          $accent-color
     inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
     urgent_workspace   $urgent-bg-color   $urgent-bg-color   $urgent-text-color
   }
@@ -175,6 +176,7 @@ bindsym $mod+XF86Eject mode "$mode_system"
 bindsym $mod+Pause mode "$mode_system"
 
 # workspace assignments
+assign [class="Vmware-view"] 7
 assign [class="Pidgin"] 8
 assign [class="Thunderbird"] 9
 assign [class="Spotify"] 10
