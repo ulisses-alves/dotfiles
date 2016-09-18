@@ -1,9 +1,8 @@
-rofi.font: Fantasque Sans Mono Bold 10
-rofi.location: 1
-rofi.width: 100
+rofi.font: Fantasque Sans Mono 11
+rofi.location: 0
 rofi.color-enabled: true
-rofi.separator-style: none
-rofi.color-window: #333333, #333333, #222222
-rofi.color-normal: #333333, #d8d8d8, #333333, #222222, #d8d8d8
+rofi.separator-style: solid
+rofi.color-window: #333333, #222222, #444444
+rofi.color-normal: #333333, #d8d8d8, #333333, #333333, #a3be8c
 rofi.color-active: #333333, #a3be8c, #333333, #222222, #a3be8c
 rofi.color-urgent: #333333, #bf616a, #333333, #222222, #bf616a
