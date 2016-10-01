@@ -8,6 +8,8 @@ Plug 'morhetz/gruvbox'
 Plug 'kien/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'leafgarland/typescript-vim'
+Plug 'othree/html5.vim'
 Plug 'scrooloose/syntastic'
 
 call plug#end()
