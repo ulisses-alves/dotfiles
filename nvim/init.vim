@@ -10,6 +10,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'leafgarland/typescript-vim'
 Plug 'othree/html5.vim'
+Plug 'hail2u/vim-css3-syntax'
 Plug 'scrooloose/syntastic'
 
 call plug#end()
