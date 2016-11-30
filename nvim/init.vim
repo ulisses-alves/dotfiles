@@ -13,6 +13,7 @@ Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
+Plug 'wavded/vim-stylus'
 Plug 'scrooloose/syntastic'
 
 call plug#end()
