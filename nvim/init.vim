@@ -37,4 +37,4 @@ set shiftround
 set termguicolors
 set background=dark
 
-colorscheme gruvbox
+silent! colorscheme gruvbox
