@@ -1,0 +1,3 @@
+bind generic	;	view-log
+bind generic	k	move-down
+bind generic	l	move-up
