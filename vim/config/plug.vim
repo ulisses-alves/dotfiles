@@ -18,5 +18,6 @@ Plug 'blueyed/vim-diminactive'
 Plug 'rust-lang/rust.vim'
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/syntastic'
+Plug 'pangloss/vim-javascript'
 
 call plug#end()
