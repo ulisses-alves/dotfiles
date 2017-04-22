@@ -11,9 +11,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 Plug 'leafgarland/typescript-vim'
+Plug 'lambdatoast/elm.vim'
 Plug 'othree/html5.vim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'wavded/vim-stylus'
+Plug 'fatih/vim-go'
 Plug 'scrooloose/syntastic'
 Plug 'mtscout6/syntastic-local-eslint.vim'
 
@@ -28,7 +30,7 @@ set number
 set hidden
 set autoindent
 
-set tabstop=8
+set tabstop=2
 set expandtab
 set softtabstop=2
 set shiftwidth=2
@@ -38,3 +40,12 @@ set termguicolors
 set background=dark
 
 silent! colorscheme gruvbox
+
+fun! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfun
+
+autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
