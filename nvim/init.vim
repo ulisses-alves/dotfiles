@@ -1,30 +1,11 @@
-call plug#begin()
+let g:jsx_ext_required=0
 
-Plug 'flazz/vim-colorschemes'
-Plug 'chriskempson/vim-tomorrow-theme'
-Plug 'chriskempson/base16-vim'
-Plug 'atelierbram/vim-colors_atelier-schemes'
-Plug 'morhetz/gruvbox'
-Plug 'kien/ctrlp.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
-Plug 'leafgarland/typescript-vim'
-Plug 'lambdatoast/elm.vim'
-Plug 'othree/html5.vim'
-Plug 'hail2u/vim-css3-syntax'
-Plug 'wavded/vim-stylus'
-Plug 'fatih/vim-go'
-Plug 'scrooloose/syntastic'
-Plug 'mtscout6/syntastic-local-eslint.vim'
-
-call plug#end()
-
-source $HOME/.config/nvim/ctrlp.vim
-source $HOME/.config/nvim/airlines.vim
-source $HOME/.config/nvim/mappings.vim
-source $HOME/.config/nvim/syntastic.vim
+source $HOME/.config/nvim/config/plug.vim
+source $HOME/.config/nvim/config/ctrlp.vim
+source $HOME/.config/nvim/config/airlines.vim
+source $HOME/.config/nvim/config/mappings.vim
+source $HOME/.config/nvim/config/syntastic.vim
+source $HOME/.config/nvim/config/elm.vim
 
 set number
 set hidden
@@ -35,6 +16,8 @@ set expandtab
 set softtabstop=2
 set shiftwidth=2
 set shiftround
+
+set backupcopy=yes
 
 set termguicolors
 set background=dark
@@ -49,3 +32,4 @@ fun! <SID>StripTrailingWhitespaces()
 endfun
 
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
